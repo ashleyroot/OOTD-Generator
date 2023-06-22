@@ -62,7 +62,7 @@ function updateHistory(buttonId, imageName) {
   checkbox.type = "checkbox"; // 设置复选框类型
   checkbox.value = imageName; // 设置复选框的值
   link.textContent = getCurrentDate() + ": " + imageName;
-  link.href = "/Users/ziye.ouyang/Downloads/OOTD project/" + buttonId + "/" + imageName + ".jpg";
+  link.href = "path_to_the_scene_file" + buttonId + "/" + imageName + ".jpg";
   link.target = "_blank";
   listItem.appendChild(link);
   listItem.appendChild(checkbox); // 将复选框添加到历史记录项中
@@ -96,7 +96,7 @@ document.getElementById("work-button").addEventListener("click", function () {
     return !recentHistory.includes(imageName);
   });
   var randomImage = getRandomElement(availableImages);
-  var imagePath = "/Users/ziye.ouyang/Downloads/OOTD project/work/" + randomImage + ".jpg";
+  var imagePath = "path_to_the_scene_file" + randomImage + ".jpg";
   document.getElementById("result-image").src = imagePath;
   updateHistory("work", randomImage);
 });
@@ -109,7 +109,7 @@ document.getElementById("leisure-button").addEventListener("click", function () 
     return !recentHistory.includes(imageName);
   });
   var randomImage = getRandomElement(availableImages);
-  var imagePath = "/Users/ziye.ouyang/Downloads/OOTD project/leisure/" + randomImage + ".jpg";
+  var imagePath = "path_to_the_scene_file" + randomImage + ".jpg";
   document.getElementById("result-image").src = imagePath;
   updateHistory("leisure", randomImage);
 });
@@ -122,7 +122,7 @@ document.getElementById("climbing-button").addEventListener("click", function ()
     return !recentHistory.includes(imageName);
   });
   var randomImage = getRandomElement(availableImages);
-  var imagePath = "/Users/ziye.ouyang/Downloads/OOTD project/climbing/" + randomImage + ".jpg";
+  var imagePath = "path_to_the_scene_file" + randomImage + ".jpg";
   document.getElementById("result-image").src = imagePath;
   updateHistory("climbing", randomImage);
 });
@@ -135,7 +135,7 @@ document.getElementById("gym-button").addEventListener("click", function () {
     return !recentHistory.includes(imageName);
   });
   var randomImage = getRandomElement(availableImages);
-  var imagePath = "/Users/ziye.ouyang/Downloads/OOTD project/gym/" + randomImage + ".jpg";
+  var imagePath = "path_to_the_scene_file" + randomImage + ".jpg";
   document.getElementById("result-image").src = imagePath;
   updateHistory("gym", randomImage);
 });
@@ -148,7 +148,7 @@ document.getElementById("swim-button").addEventListener("click", function () {
     return !recentHistory.includes(imageName);
   });
   var randomImage = getRandomElement(availableImages);
-  var imagePath = "/Users/ziye.ouyang/Downloads/OOTD project/swim/" + randomImage + ".jpg";
+  var imagePath = "path_to_the_scene_file" + randomImage + ".jpg";
   document.getElementById("result-image").src = imagePath;
   updateHistory("swim", randomImage);
 });
