@@ -1,0 +1,102 @@
+h1 {
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 550;
+  letter-spacing: -.005em;
+  font-family: "SF Pro Display", "SF Pro", Arial, sans-serif;
+}
+
+
+
+button {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#work-button,
+#leisure-button,
+#climbing-button,
+#gym-button,
+#swim-button {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+#work-button:hover,
+#leisure-button:hover,
+#climbing-button:hover,
+#gym-button:hover,
+#swim-button:hover {
+  background-color: #e0e0e0;
+}
+
+#result-container {
+  margin-top: 20px;
+}
+
+.image-wrapper {
+  width: 300px;
+  /* 设置图片展示区域的宽度 */
+  height: 300px;
+  /* 设置图片展示区域的高度 */
+  overflow: hidden;
+  /* 超出区域的部分隐藏 */
+}
+
+.image-wrapper img {
+  width: 100%;
+  /* 让图片宽度充满展示区域 */
+  height: 100%;
+  /* 让图片高度充满展示区域 */
+  object-fit: cover;
+  /* 按比例缩放图片，保持填充 */
+}
+
+#ootd-history {
+  display: flex;
+}
+
+#ootd-history h3 {
+  color: #555;
+}
+
+.history-item {
+  flex: 1;
+  margin-right: 10px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+#retry-button {
+  margin-top: 20px;
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.divider {
+  border-top: 1px solid #e0e0e0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#result-container {
+  text-align: center;
+  padding: 14px 0;
+  /* 将上下边距设置为 14 */
+}

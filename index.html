@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>今天穿什么出门?</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      font-family: "San Francisco", Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result-container {
+      text-align: center;
+      margin-top: 50px;
+      border-top: 1px solid #ddd;
+      padding-top: 30px;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      max-width: 300px;
+      height: 300px;
+      overflow: hidden;
+      margin: 0 auto;
+      background-color: #eee;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    #ootd-history {
+      margin-top: 50px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    #ootd-history>div {
+      width: 48%;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    #ootd-history h3 {
+      margin-bottom: 20px;
+    }
+
+    #retry-button {
+      padding: 10px 20px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #retry-button:hover {
+      background-color: #e53935;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>💃 OOTD 生成器</h1>
+
+  <div class="button-container">
+    <button id="work-button">💼 工作穿什么</button>
+    <button id="leisure-button">🍺 出去玩穿什么</button>
+    <button id="climbing-button">🧗 爬山穿什么</button>
+    <button id="gym-button">🏋️ 健身穿什么</button>
+    <button id="swim-button">🏊‍♀️ 游泳穿什么</button>
+  </div>
+
+  <div id="result-container">
+    <div class="image-wrapper">
+      <img id="result-image" src="/Users/ziye.ouyang/Downloads/OOTD project/pictures/000000.jpg" alt="OOTD">
+    </div>
+  </div>
+
+  <hr class="divider">
+  <div id="ootd-history">
+    <div class="history-item">
+      <div id="work-history">
+        <h3>工作穿了啥</h3>
+        <ul id="work-today"></ul>
+        <ul id="work-ootd"></ul>
+      </div>
+    </div>
+    <div class="history-item">
+      <div id="leisure-history">
+        <h3>出去玩穿了啥</h3>
+        <ul id="leisure-today"></ul>
+        <ul id="leisure-ootd"></ul>
+      </div>
+    </div>
+    <div class="history-item">
+      <div id="climbing-history">
+        <h3>爬山穿了啥</h3>
+        <ul id="climbing-today"></ul>
+        <ul id="climbing-ootd"></ul>
+      </div>
+    </div>
+    <div class="history-item">
+      <div id="gym-history">
+        <h3>健身穿了啥</h3>
+        <ul id="gym-today"></ul>
+        <ul id="gym-ootd"></ul>
+      </div>
+    </div>
+    <div class="history-item">
+      <div id="swim-history">
+        <h3>游泳穿了啥</h3>
+        <ul id="swim-today"></ul>
+        <ul id="swim-ootd"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
