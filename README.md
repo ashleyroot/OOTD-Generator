@@ -1,6 +1,4 @@
 # GPT-based-coding
 
-This OOTD Generator is mainly for Ziye's local calling. It generates an outfit picture stored in local path. 
-Arrays are collected by python.
-
-All code is done by chatGPT 3.5!
+This OOTD Generator generates an outfit picture stored in local path. 
+You may substitute it with your owne preferred OOTD combination.
